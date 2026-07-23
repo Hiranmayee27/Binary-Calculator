@@ -1,1 +1,105 @@
+/*Lab 1: Maven & Unit Testing
 
+# Binary Calculator
+
+## Overview
+
+The Binary Calculator is a Java-based application developed as part of the SOFE3980U course assignment. The objective of this project is to implement arithmetic and logical operations on binary numbers using object-oriented programming principles and the Maven build automation tool. The application provides a simple interface for performing operations on binary values while demonstrating software development practices such as modular programming, unit testing, and project management using Maven.
+
+This project also demonstrates the use of JUnit for automated testing, ensuring that each implemented function behaves correctly under different test scenarios. Maven is used to manage project dependencies, compile the source code, execute test cases, package the application, and generate project documentation.
+
+## Features
+
+The Binary Calculator supports the following binary operations:
+
+- Binary Addition
+- Bitwise OR
+- Bitwise AND
+- Binary Multiplication
+
+Each operation accepts two binary numbers as input and returns the resulting binary value.
+
+## Project Structure
+
+The project follows the standard Maven directory structure.
+
+
+BinaryCalculator
+│
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── com
+│   │           └── ontariotechu
+│   │               └── sofe3980U
+│   │                   ├── App.java
+│   │                   └── Binary.java
+│   │
+│   └── test
+│       └── java
+│           └── com
+│               └── ontariotechu
+│                   └── sofe3980U
+│                       ├── AppTest.java
+│                       └── BinaryTest.java
+│
+├── pom.xml
+└── README.md
+
+
+## Technologies Used
+
+This project was implemented using the following technologies:
+
+- Java
+- Apache Maven
+- JUnit
+- Visual Studio Code
+
+## Building the Project
+
+Before building the project, ensure that Java and Maven are installed and configured correctly.
+
+To compile the project and create the executable JAR file, execute:
+
+
+mvn clean package
+
+
+To generate the project documentation and reports, execute:
+
+
+mvn clean package site assembly:single
+
+
+## Running the Application
+
+After successfully building the project, run the application using:
+
+
+java -jar target/BinaryCalculator-1.0.0.jar
+
+
+The program displays the results of the implemented binary operations.
+
+## Running Unit Tests
+
+JUnit test cases are included to verify the correctness of the Binary class methods.
+
+To execute all tests, run:
+
+
+mvn test
+
+
+If all tests pass successfully, Maven displays a BUILD SUCCESS message.
+
+## Assignment Requirements
+
+This project satisfies the design requirements by implementing additional binary operations including OR, AND, and Multiplication. The application was updated to demonstrate these new functions, and corresponding JUnit test cases were added to validate their correctness.
+
+## Author
+
+Hiranmayee Brundavanam
+
+SOFE3980U – Software Engineering Assignment
